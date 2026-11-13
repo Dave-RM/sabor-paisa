@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | El Sabor Paisa</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contacto.html">
+<div id="site-header"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Contacto</p>
+    <h1>Contáctanos</h1>
+    <p>Reservas, pedidos, eventos o simplemente un saludo. Aquí estamos.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container split" style="align-items:start">
+    <div class="reveal">
+      <h2>Visítanos</h2>
+      <ul class="checks" style="list-style:none">
+        <li style="padding-left:0">📍 Dirección por confirmar</li>
+        <li style="padding-left:0">📞 Teléfono / WhatsApp: por confirmar</li>
+        <li style="padding-left:0">✉️ Correo: por confirmar</li>
+      </ul>
+      <h3 style="margin-top:1.6rem">Horarios (referenciales)</h3>
+      <ul id="horario" style="list-style:none;margin-top:.5rem"></ul>
+      <p style="margin-top:1.2rem;font-size:.9rem;opacity:.7">Los datos de ubicación y horarios se editan al inicio de script.js.</p>
+      <div class="btns"><a class="btn outline" href="domicilios.html">Pedir a domicilio</a><a class="btn outline" href="eventos.html">Eventos</a></div>
+    </div>
+    <div class="card reveal">
+      <h3>Escríbenos</h3>
+      <form data-wa="Hola, les escribo desde la página web de El Sabor Paisa:" novalidate>
+        <div><label>Nombre</label><input name="Nombre" required><div class="err"></div></div>
+        <div><label>Motivo</label><select name="Motivo"><option>Reserva de mesa</option><option>Domicilio</option><option>Evento</option><option>Otro</option></select></div>
+        <div><label>Mensaje</label><textarea name="Mensaje" rows="4" required></textarea><div class="err"></div></div>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+        <div class="msg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="script.js"></script>
+</body>
+</html>

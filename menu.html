@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menú | El Sabor Paisa</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="menu.html">
+<div id="site-header"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="crumbs"><a href="index.html">Inicio</a> / Menú</p>
+    <h1>Nuestro menú</h1>
+    <p>Un menú corto, con recetas estandarizadas y productos de temporada en el plato del día.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="tabs">
+      <button class="tab on" data-filter="todos">Todo</button>
+      <button class="tab" data-filter="insignia">Insignia</button>
+      <button class="tab" data-filter="fuertes">Platos fuertes</button>
+      <button class="tab" data-filter="almuerzo">Almuerzo ejecutivo</button>
+      <button class="tab" data-filter="bebidas">Bebidas</button>
+      <button class="tab" data-filter="postres">Postres</button>
+    </div>
+    <p class="center" style="opacity:.7;font-size:.9rem">Precios disponibles en el local y por WhatsApp.</p>
+
+    <div class="grid g2">
+      <div class="card dish" data-cat="insignia"><div class="emoji">🍛</div><div><h3>Bandeja paisa</h3><p>Frijoles, arroz, carne molida, chicharrón, chorizo, huevo, plátano maduro, arepa y aguacate.</p><span class="tag star">⭐ Insignia</span><span class="tag">Para hambrientos</span></div></div>
+      <div class="card dish" data-cat="insignia"><div class="emoji">🥘</div><div><h3>Sancocho antioqueño</h3><p>Caldo con plátano, yuca, papa y carne, acompañado de arroz, aguacate y arepa.</p><span class="tag star">⭐ Insignia</span></div></div>
+      <div class="card dish" data-cat="insignia"><div class="emoji">🍜</div><div><h3>Mondongo</h3><p>Sopa espesa de callo con verduras y hierbas, cocida lentamente.</p><span class="tag star">⭐ Insignia</span><span class="tag">Fines de semana</span></div></div>
+      <div class="card dish" data-cat="fuertes"><div class="emoji">🫘</div><div><h3>Cazuela de frijoles</h3><p>Frijoles cargamanto con garra, chicharrón y hogao, servida bien caliente.</p></div></div>
+      <div class="card dish" data-cat="fuertes"><div class="emoji">🥩</div><div><h3>Posta negra</h3><p>Posta de res cocinada lentamente en salsa de panela, jugosa y con carácter.</p></div></div>
+      <div class="card dish" data-cat="fuertes"><div class="emoji">🥓</div><div><h3>Chicharrón con arepa</h3><p>Chicharrón crocante, arepa de maíz, limón y hogao.</p></div></div>
+      <div class="card dish" data-cat="almuerzo"><div class="emoji">🍽️</div><div><h3>Almuerzo ejecutivo</h3><p>Sopa, seco, jugo y postre del día. Rápido, completo y con sabor a hogar.</p><span class="tag">Entre semana</span><span class="tag">Suma sellos</span></div></div>
+      <div class="card dish" data-cat="almuerzo"><div class="emoji">🌱</div><div><h3>Plato del día</h3><p>Preparado con productos de temporada. Pregunta cuál es hoy.</p><span class="tag">De temporada</span></div></div>
+      <div class="card dish" data-cat="bebidas"><div class="emoji">🥤</div><div><h3>Jugos naturales</h3><p>Lulo, mora, maracuyá, guanábana y más, en agua o en leche.</p></div></div>
+      <div class="card dish" data-cat="bebidas"><div class="emoji">🍋</div><div><h3>Limonada de panela</h3><p>Fresca, dulce y con ese toque de panela de la casa.</p></div></div>
+      <div class="card dish" data-cat="bebidas"><div class="emoji">☕</div><div><h3>Chocolate con queso</h3><p>Chocolate espeso con queso fresco: la combinación más paisa.</p></div></div>
+      <div class="card dish" data-cat="postres"><div class="emoji">🍮</div><div><h3>Postre de natas</h3><p>Cremoso, suave y dulce, como lo hacían antes.</p></div></div>
+      <div class="card dish" data-cat="postres"><div class="emoji">🍈</div><div><h3>Brevas con arequipe</h3><p>Brevas en almíbar con arequipe artesanal.</p></div></div>
+      <div class="card dish" data-cat="postres"><div class="emoji">🧀</div><div><h3>Cuajada con melado</h3><p>Cuajada fresca bañada en melado de caña.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Sin afanes</span>
+      <h2>¿Vas con un grupo grande?</h2>
+      <p>Armamos mesas familiares, almuerzos para empresas y buffets para celebraciones.</p>
+      <div class="btns"><a class="btn" href="eventos.html">Conocer más</a><a class="btn outline" href="domicilios.html">Pedir a domicilio</a></div>
+    </div>
+    <div class="visual green reveal">🍽️</div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="script.js"></script>
+</body>
+</html>
